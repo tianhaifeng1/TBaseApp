@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/layout_filter_tab_rv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ttitle_h2"
+        android:background="@color/filter_tab_bg">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/layout_filter_item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/filter_all_bg"
+        android:layout_marginTop="@dimen/ttitle_h2"
+        android:visibility="gone"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/layout_filter_item_recyclerview"
+            android:layout_width="match_parent"
+            android:background="@color/filter_item_bg"
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

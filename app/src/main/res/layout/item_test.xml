@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="81dp"
+    android:paddingLeft="@dimen/item_recyclerview_space_h"
+    android:paddingRight="@dimen/item_recyclerview_space_h"
+    android:paddingTop="@dimen/item_recyclerview_space_v"
+    android:paddingBottom="@dimen/item_recyclerview_space_v"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp80"
+        android:background="@color/color_green"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/item_test_name"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp30"
+            android:text="name"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/item_test_age"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp30"
+            android:text="age"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/item_test_name"
+            />
+
+        <TextView
+            android:id="@+id/item_test_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:text="address"
+            android:gravity="center_vertical"
+            android:layout_below="@id/item_test_name"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

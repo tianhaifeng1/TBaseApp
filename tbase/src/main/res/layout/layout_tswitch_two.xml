@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tswitch_ll"
+    android:layout_width="@dimen/tswitch_w"
+    android:layout_height="@dimen/tswitch_h"
+    android:background="@drawable/tswitch"
+    android:padding="@dimen/tswitch_padding"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tswitch_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/tswitch_left_select"
+        android:gravity="center"
+        android:text="tab1"
+        android:textColor="@color/tswitch_textcolor_select" />
+    <TextView
+        android:id="@+id/tswitch_center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/tswitch_center_"
+        android:gravity="center"
+        android:text="tab2"
+        android:textColor="@color/tswitch_textcolor_select_no"
+        android:layout_marginLeft="@dimen/tswitch_tab_space"/>
+
+    <TextView
+        android:id="@+id/tswitch_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/tswitch_right_"
+        android:gravity="center"
+        android:text="tab3"
+        android:textColor="@color/tswitch_textcolor_select_no"
+        android:layout_marginLeft="@dimen/tswitch_tab_space"/>
+
+</LinearLayout>
+
+
+
+
+
+
+

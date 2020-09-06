@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swiperefreshlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/item_recyclerview_space_h"
+            android:paddingRight="@dimen/item_recyclerview_space_h"
+            android:paddingTop="@dimen/item_recyclerview_space_v"
+            android:paddingBottom="@dimen/item_recyclerview_space_v"
+            android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+        <include layout="@layout/layout_defaultpage" />
+
+    </RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
