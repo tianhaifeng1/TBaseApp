@@ -16,6 +16,7 @@ import com.trjx.tbase.mvp.TView;
 public class TFragment extends Fragment implements TView {
 
     public InitActivity activity;
+    public int mPageNum = 1;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {

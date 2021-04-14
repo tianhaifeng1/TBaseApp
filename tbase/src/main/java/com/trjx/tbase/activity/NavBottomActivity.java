@@ -1,9 +1,11 @@
 package com.trjx.tbase.activity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 
 import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
@@ -50,7 +52,9 @@ public abstract class NavBottomActivity extends InitActivity implements BottomNa
         initWork();
         initView();
 
-
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN |
+                WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//竖屏
     }
 
     /**
